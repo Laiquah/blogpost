@@ -1,10 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Teko:wght@500&display=swap');
+
 
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
+
 html,
 body{
     overflow-x: hidden;
@@ -14,16 +17,38 @@ body{
 header .navbar-expand-lg{
     background-color: #FED1DF !important;
 }
+
 .LOGO{
     height:5rem;
     width:10rem;
     object-fit: contain;
 }
+
 #linkItem{
     font-weight: bold;
     font-size:1.5rem;
     margin-right:3rem !important;
 }
+
+
+/* color of nav link  */
+#linkItem a{
+    color: black !important;
+}
+
+/* for nav hover  */
+.nav-item:hover{
+    background-color: #FFF5E4 !important;
+}
+
+/* header  */
+h1{
+    text-align: center;
+}
+
+.card{
+height: 750px  !important;
+
 #linkItem a{
     color: black !important;
 }
@@ -121,4 +146,5 @@ header .navbar-expand-lg{
 
 img{
     width: 20rem;
+
 }

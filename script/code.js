@@ -555,7 +555,7 @@ blog.forEach((data) => {
 // </div>
 //     `;
 
-}
+});
 let posts = [
     {
         id: "1",

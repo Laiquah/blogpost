@@ -39,9 +39,9 @@ let blog = [
   },
   {
     id:5,
-    title: "10 Effective ways on How to Reduce Weight Naturally",
-    image: "https://i.postimg.cc/dVS7hX9N/6114f3fc950e007d489ef0c6-Untitled-design-19.png",
-    author: "Weight loss brings to mind images of tonics, plates of wilted salad leaves and magic “slimming pills.” But that couldn’t be further from the truth! The science behind weight loss is helping your body adjust to a new metabolic rate with the right combination of foods. You need to learn how to reduce weight naturally, without chemical stimulants or starvation. Here are some natural weight loss tips and 10 ways to lose weight naturally without depriving yourself or eating the wrong foods. ",
+    title: "Mayo Clinic",
+    image: "https://i.postimg.cc/m2vWXyVp/solen-feyissa-j-Gm-BZypo-FPc-unsplash.jpg",
+    author: "WebMD is a trusted online platform offering comprehensive health information and resources to help individuals make informed decisions about their well-being.",
     description: " Author: Lovneet",
     date: "August 11, 2021",
     modal5: "https://www.nutritionbylovneet.com/blog/10-effective-ways-on-how-to-reduce-weight-naturally",
@@ -110,6 +110,40 @@ let blog = [
     modal12: "https://www.nutritionbylovneet.com/blog/10-effective-ways-on-how-to-reduce-weight-naturally",
   },
 ];
+let posts = [
+    {
+        id: "1",
+        title: "Mayo Clinic",
+        imageUrl: "https://i.postimg.cc/m2vWXyVp/solen-feyissa-j-Gm-BZypo-FPc-unsplash.jpg",
+        description: "Mayo Clinic is a prestigious medical organization in the United States that is highly regarded for its comprehensive healthcare services, medical research, and educational offerings.",
+        content: "https://www.mayoclinic.org/",
+        date: new Date( )
+    },
+    {
+        id: "2",
+        title: "WebMD",
+        imageUrl: "https://i.postimg.cc/zfXjr9Gd/online-marketing-h-Igeo-Qj-S-i-E-unsplash.jpg",
+        description: "WebMD is a trusted online platform offering comprehensive health information and resources to help individuals make informed decisions about their well-being.",
+        content: "https://www.webmd.com/",
+        date: new Date( )
+    },
+    {
+        id: "3",
+        title: "Healthline",
+        imageUrl: "https://i.postimg.cc/MKpK15HC/Screenshot-2023-06-08-121409.png",
+        description: "Healthline is a leading online platform that provides comprehensive health information and resources to support individuals in their pursuit of a healthy lifestyle.",
+        content: "https://www.healthline.com/",
+        date: new Date( )
+    },
+    {
+        id: "4",
+        title: "American Cancer Society",
+        imageUrl: "https://i.postimg.cc/rwSVkPPt/Screenshot-2023-06-08-121833.png",
+        description: "The American Cancer Society (ACS) is a prominent nonprofit organization dedicated to cancer research, prevention, advocacy, and patient support. Founded in 1913, their mission is to eliminate cancer as a major health problem.",
+        content: "https://www.cancer.org/",
+        date: new Date( ),
+    }
+  ];
 let divBlog = document.querySelector(".blog");
 blog.forEach((data) => {
   divBlog.innerHTML += `<div class="col column">

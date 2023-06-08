@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="LOGO" src="https://i.postimg.cc/3w8rRC4w/Screenshot-2023-06-08-102052.png" loading="lazy" alt="LOGO"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item" id="linkItem">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item" id="linkItem">
+                    <a class="nav-link" aria-current="page" href="#">Blog posts</a>
+                  </li>
+                  <li class="nav-item" id="linkItem">
+                    <a class="nav-link" aria-current="page" href="#">Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        </header>
+
+    <main>
+
+        <div id="modalContainer">
+            <div id="modalContent">
+              <label for="inputValue">Input Value:</label>
+              <input type="text" id="inputValue" />
+              <button id="saveBtn">Save</button>
+            </div>
+          </div>
+      <table class="table" id="color">
+        <thead>
+          <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Description</th>
+            <th scope="col">Content</th>
+            <th scope="col">Date</th>
+            <th scope="col">Image</th>
+            <th scope="col" colspan="2" id="addMe">
+              <!-- Button trigger modal -->
+              <button
+                id="addButton"  
+              >
+                +
+              </button>
+
+              <!-- Modal -->
+              <!-- <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModal2Label"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModal2Label">
+                        Add Content
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h6>Title</h6>
+                      <input type="text" />
+                      <h6>Author</h6>
+                      <input type="text" />
+                      <h6>Description</h6>
+                      <input type="text" />
+                      <h6>Content</h6>
+                      <input type="text" />
+                      <h6>Date</h6>
+                      <input type="text" />
+                      <h6>Image</h6>
+                      <input type="text" />
+                    </div>
+                    <div class="modal-footer"> -->
+                      <!-- <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button> -->
+                      <!-- <button type="button" class="btn btn-primary">Add</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">ID here</th>
+            <td>Title goes here</td>
+            <td>Author here</td>
+            <td>Desc here</td>
+            <td>Content here</td>
+            <td>Date here</td>
+            <td>Img here</td>
+            <td id="edit">
+              <button id="edit">
+                <i class="fas fa fa-regular fa-pencil"></i>
+              </button>
+            </td>
+            <td id="delete">
+              <button id="delete">
+                <i class="fas fa fa-solid fa-trash"></i>
+              </button>
+            </td>
+          </tr> 
+        </tbody>
+      </table>
+
+      
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/code.js"></script>
+  </body>
+</html>
